@@ -3,6 +3,7 @@ export class Endereco {
         private rua: string,
         private numero: string,
         private bairro: string,
+        private cidade: string,
         private estado: string) {
     
     }
