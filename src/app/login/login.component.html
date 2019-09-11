@@ -1,0 +1,46 @@
+<H1 style="font-style: italic">Cadastro</H1>
+<form action="">
+    <div class="field">
+    <label for="">nome</label>
+    <input #nome type="text">
+    <label for="">sobrenome</label>
+    <input #sobrenome type="text">
+    </div>
+
+    <div class="field">
+        <label for="">RG</label>
+        <input #RG type="number" required>
+        <label for="">Orgão exp</label>
+        <input #orgao type="text">
+    </div>
+    
+    <div class="field">
+            <label for="">CPF/CNPJ</label>
+            <input #cpf type="number">
+        </div>
+        <div class="field">
+                <label for="">Telefone</label>
+                <input #telefone type="number">
+                <label for="">E-mail</label>
+                <input #email type="email">
+            </div>
+            <div class="field">
+                    <label for="">Profissão</label>
+                    <input #profissao type="text">
+                    <label for="">Estado</label>
+                    <input #estado type="text">
+                </div>
+                <div class="field">
+                        <label for="">Cidade</label>
+                        <input #cidade type="text">
+                        <label for="">Rua</label>
+                        <input #rua type="text">
+                        <label for="">Número</label>
+                        <input #numero type="text">
+                    </div>
+                <label for="">Tipo cliente</label><br>
+                <h3></h3>
+                <input #locator type="radio" name="tipo" value="male" checked> Locator<br>
+                <input #locatario type="radio" name="tipo" value="female"> Locatário<br>
+                <button type="submit" (click)="logar(nome.value, sobrenome.value, RG.value, orgao.value,cpf.value,telefone.value,email.value,profissao.value, estado.value, cidade.value, rua.value, numero.value)"><h3>cadastrar</h3></button>
+</form>
